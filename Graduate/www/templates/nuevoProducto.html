@@ -1,0 +1,21 @@
+<ion-view title="Nuevo Producto" id="page6">
+    <ion-content padding="true" class="has-header">
+        <form id="nuevoProducto-form3" class="list">
+            <label class="item item-input" id="nuevoProducto-input5" name="txtDescripcion">
+                <span class="input-label">Descripción:</span>
+                <input type="text" placeholder="" id="txtDescripcion" ng-model="txtDescripcion">
+            </label>
+            <label class="item item-input" id="nuevoProducto-input6" name="txtUnidad">
+                <span class="input-label">Unidad de Medida:</span>
+                <input type="text" placeholder="" id="txtUnidad" ng-model="txtUnidad">
+            </label>
+            <label class="item item-input" id="nuevoProducto-input7" name="txtTamano">
+                <span class="input-label">Tamaño:</span>
+                <input type="text" placeholder="" id="txtTamanio" ng-model="txtTamanio">
+            </label>
+        </form>
+        <button id="nuevoProducto-button8" class="button button-positive  button-block" ng-click="tomarFoto()">Tomar Foto</button>
+        <a id="nuevoProducto-button9" class="button button-positive  button-block" ng-click="guardar()">Guardar</a>
+        <a id="nuevoProducto-button10" class="button button-positive  button-block" ng-click="cancelar()">Cancelar</a>
+    </ion-content>
+</ion-view>

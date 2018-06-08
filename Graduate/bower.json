@@ -1,5 +1,6 @@
 {
-    "name": "Graduate",
-    "dependencies": {
-    }
+  "name": "Graduate",
+  "dependencies": {
+    "ionic": "v3.9.2"
+  }
 }
