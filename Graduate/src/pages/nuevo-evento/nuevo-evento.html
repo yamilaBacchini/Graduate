@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Nuevo Evento
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page11">
+  <h4 id="nuevoEvento-heading6" style="color:#000000;">
+    Tipo de evento
+  </h4>
+  <form id="nuevoEvento-form9">
+    <ion-item id="nuevoEvento-select1">
+      <ion-label></ion-label>
+      <ion-select name="selTipoEvento">
+        <ion-option>
+          Parcial
+        </ion-option>
+        <ion-option>
+          Trabajo Práctico
+        </ion-option>
+        <ion-option>
+          Seminario
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <h4 id="nuevoEvento-heading9" style="color:#000000;">
+    Fecha
+  </h4>
+  <form id="nuevoEvento-form10">
+    <ion-item id="nuevoEvento-input7">
+      <ion-label></ion-label>
+      <ion-input type="date" placeholder="" name="dpFechaEvento"></ion-input>
+    </ion-item>
+    <h4 id="nuevoEvento-heading10" style="color:#000000;">
+      Detalles
+    </h4>
+    <ion-item id="nuevoEvento-textarea3">
+      <ion-label></ion-label>
+      <ion-textarea placeholder="Temas evaluados, material necesario para el examen,, carpeta abierta, calculadora, tabla de integrales, tc"></ion-textarea>
+    </ion-item>
+  </form>
+  <button id="nuevoEvento-button6" ion-button color="balanced" block on-click="goToMateria()">
+    Agregar
+  </button>
+</ion-content>

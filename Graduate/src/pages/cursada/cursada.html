@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cursada
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page4">
+  <button id="cursada-button2" ion-button color="balanced" block style="color:#FFFFFF;" on-click="goToHistorial()">
+    Historial
+  </button>
+  <h4 id="cursada-heading1" style="color:#000000;">
+    En curso
+  </h4>
+  <button id="cursada-button4" ion-button color="dark" small style="font-size:20px;border-radius:100px 100px 100px 100px;" on-click="goToAgregarMateriasALaCursada()">
+    +
+  </button>
+  <button id="cursada-button19" ion-button color="assertive" small style="font-size:20px;border-radius:100px 100px 100px 100px;" on-click="goToAgregarMateriasALaCursada()">
+    <ion-icon name="trash"></ion-icon>
+  </button>
+  <ion-list id="cursada-list6">
+    <ion-item color="none" on-click="goToMateria()" id="cursada-list-item36">
+      Materia1
+    </ion-item>
+    <ion-item color="none" on-click="goToMateria()" id="cursada-list-item37">
+      Materia2
+    </ion-item>
+    <ion-item color="none" on-click="goToMateria()" id="cursada-list-item38">
+      Materia3
+    </ion-item>
+  </ion-list>
+  <h4 id="cursada-heading2" style="color:#000000;">
+    Próximos eventos
+  </h4>
+  <ion-list id="cursada-list7">
+    <ion-item color="none" on-click="goToDetalleEvento()" id="cursada-list-item43">
+      Parcial
+    </ion-item>
+    <ion-item color="none" on-click="goToDetalleEvento()" id="cursada-list-item44">
+      TP
+    </ion-item>
+    <ion-item color="none" on-click="goToDetalleEvento()" id="cursada-list-item45">
+      Final
+    </ion-item>
+  </ion-list>
+</ion-content>

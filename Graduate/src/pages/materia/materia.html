@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Materia
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page9">
+  <button id="materia-button5" ion-button color="royal" block style="font-size:16px;" on-click="goToNuevoEvento()">
+    Nuevo Evento
+  </button>
+  <button id="materia-button16" ion-button color="dark" style="font-size:16px;" on-click="goToForo()">
+    Foro
+  </button>
+  <h4 id="materia-heading5" style="color:#000000;">
+    Próximos eventos
+  </h4>
+  <form id="materia-form8">
+    <ion-item id="materia-toggle1">
+      <ion-label>
+        Activar notificaciones
+      </ion-label>
+      <ion-toggle color="balanced" checked="false"></ion-toggle>
+    </ion-item>
+  </form>
+  <ion-list id="materia-list9">
+    <ion-item color="none" on-click="goToDetalleEvento()" id="materia-list-item50">
+      Primer Parcial
+    </ion-item>
+    <ion-item color="none" on-click="goToDetalleEvento()" id="materia-list-item51">
+      TP 1
+    </ion-item>
+    <ion-item color="none" on-click="goToDetalleEvento()" id="materia-list-item52">
+      Recuperatorio 1 Parcial
+    </ion-item>
+  </ion-list>
+  <button id="materia-button20" ion-button color="balanced" block>
+    Materia Aprobada
+  </button>
+</ion-content>
