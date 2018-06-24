@@ -6,28 +6,28 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page2">
-  <img src="assets/img/HCLVj5SBQM63gv4RpLBw_placeholder_person.png" style="display:block;width:30%;height:100%;margin-left:auto;margin-right:auto;" />
+  <img src="assets/img/HCLVj5SBQM63gv4RpLBw_placeholder_person.png" style="display:block;width:30%;height:30%;margin-left:auto;margin-right:auto;" />
   <div id="perfil-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
     <p style="color:#000000;font-size:16px;">
       Nombre
     </p>
   </div>
-  <button id="perfil-button17" ion-button color="positive" small style="border-radius:100px 100px 100px 100px;">
+  <button (click)="onClickEditar()" id="perfilEditar" ion-button color="positive" small style="border-radius:100px 100px 100px 100px;">
     Edit
   </button>
   <form id="perfil-form3">
-    <ion-item id="perfil-input2">
+    <ion-item id="itemNombre" *ngIf="editar">
       <ion-label></ion-label>
-      <ion-input type="text" placeholder="Ingrese su nombre" name="txtNombre"></ion-input>
+      <ion-input type="text" placeholder="Ingrese su nombre" name="txtNombre" ng-model="valueNombre"></ion-input>
     </ion-item>
     <div id="perfil-markdown3" class="show-list-numbers-and-dots">
       <p style="color:#000000;font-size:16px;">
         Descripción
       </p>
     </div>
-    <ion-item id="perfil-textarea2">
+    <ion-item id="itemDescripcion" *ngIf="editar">
       <ion-label></ion-label>
-      <ion-textarea placeholder="Ingrese una descripción"></ion-textarea>
+      <ion-textarea placeholder="Ingrese una descripción" ng-model="valueDescripcion"></ion-textarea>
     </ion-item>
     <h4 id="perfil-heading8" style="color:#000000;">
       Datos Personales
@@ -37,43 +37,49 @@
         Fecha de nacimiento
       </p>
     </div>
-    <ion-item id="perfil-input6">
+    <ion-item id="itemFechaNacimiento" *ngIf="editar">
       <ion-label></ion-label>
-      <ion-input type="date" placeholder="Ingrese fecha de nacimiento" name="dpFechaNacimiento"></ion-input>
+      <ion-input type="date" placeholder="Ingrese fecha de nacimiento" name="dtpFechaNacimiento" ng-model="valueFechaNacimiento"></ion-input>
     </ion-item>
     <div id="perfil-markdown7" class="show-list-numbers-and-dots">
       <p style="color:#000000;">
         Mail
       </p>
     </div>
-    <ion-item id="perfil-input4">
+    <ion-item id="itemMail" *ngIf="editar">
       <ion-label></ion-label>
-      <ion-input type="email" placeholder="Ingrese un mail" name="txtMail"></ion-input>
+      <ion-input type="email" placeholder="Ingrese un mail" name="txtMail" ng-model="valueMail"></ion-input>
     </ion-item>
     <div id="perfil-markdown8" class="show-list-numbers-and-dots">
       <p style="color:#000000;">
         Teléfono
       </p>
     </div>
-    <ion-item id="perfil-input5">
+    <ion-item id="itemTelefono" *ngIf="editar">
       <ion-label></ion-label>
-      <ion-input type="tel" placeholder="Ingrese un teléfono" name="txtTelefono"></ion-input>
+      <ion-input type="tel" placeholder="Ingrese un teléfono" name="txtTelefono" ng-model="valueTelefono"></ion-input>
     </ion-item>
   </form>
   <h4 id="perfil-heading7" style="color:#000000;">
     Carrera
   </h4>
-  <div id="perfil-markdown2" class="show-list-numbers-and-dots">
+  <div id="lblCarrera" class="show-list-numbers-and-dots">
     <p style="color:#000000;font-size:16px;">
       Nombre Carrera
     </p>
   </div>
-  <div id="perfil-markdown4" class="show-list-numbers-and-dots">
+  <h4 id="perfil-heading9" style="color:#000000;">
+    Porcentaje Realizado
+  </h4>
+  <div id="lblPorcentaje" class="show-list-numbers-and-dots">
     <p style="color:#000000;font-size:16px;">
       Porcentaje realizado
     </p>
   </div>
-  <div id="perfil-markdown18" class="show-list-numbers-and-dots">
+  <h4 id="perfil-heading10" style="color:#000000;">
+    Promedio
+  </h4>
+  <div id="lblPromedio" class="show-list-numbers-and-dots">
     <p style="color:#000000;font-size:16px;">
       Promedio
     </p>
